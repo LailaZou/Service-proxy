@@ -1,0 +1,19 @@
+# zuul:
+#  routes:
+#    first:
+#      path: /login/**
+#      url: http://localhost:9001/login
+#    second:
+#      path: /register/**
+#      url: http://localhost:9001/register
+#zuul:
+#  host:
+#    connect-timeout-millis: 20000
+#    socket-timeout-millis: 60000
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 60000
